@@ -6,7 +6,14 @@
 <Meta
 	title="Sveltio/Button"
 	component={Button}
-	argTypes={{ label: { control: 'text' }, primary: { control: 'boolean' }, backgroundColor: { control: 'color' }, size: { control: { type: 'select', options: ['small', 'medium', 'large'] } }, onClick: { action: 'onClick' } }} />
+	argTypes={{
+		label: { control: 'text' },
+		primary: { control: 'boolean' },
+		backgroundColor: { control: 'color' },
+		size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
+		onClick: { action: 'onClick' }
+	}}
+/>
 
 <Template let:args>
 	<Button {...args} on:click={args.onClick} />
